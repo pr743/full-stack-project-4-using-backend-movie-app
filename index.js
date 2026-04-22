@@ -26,7 +26,7 @@ connectDB();
 
 app.use(
     cors({
-        origin: "https://movie-app-teal-tau.vercel.app/login",
+        origin: process.env.FRONTEND_URL,
         credentials: true,
     })
 );
